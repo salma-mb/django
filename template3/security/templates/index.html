@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for candidate in candidates %}
+        <tr>
+            <td>{{candidate.name}}</td>
+            <td>{{candidate.email}}</td>
+            <td>{{candidate.Age}}</td>
+            <td>{{candidate.phone}}</td>
+            <td>{{candidate.country}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+        <div>
+            <a href="/">Home</a>
+            <a href="about">About</a>
+            <a href="contact">Contact</a>
+        </div>
+</body>
+</html>

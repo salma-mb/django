@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+</head>
+<body>
+    <h1>About Page</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pastcandidate in pastcandidates %}
+            <tr>
+                <td>{{pastcandidate.name}}</td>
+                <td>{{pastcandidate.email}}</td>
+                <td>{{pastcandidate.Age}}</td>
+                <td>{{pastcandidate.phone}}</td>
+                <td>{{pastcandidate.country}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
